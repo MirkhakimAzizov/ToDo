@@ -57,7 +57,7 @@ async function dataBase(){
 //       .then(response => response.json())
 //       .then(json => {
 // data = json;
-  console.log(type data);
+//   console.log(type data);
   console.log(data[0].name);
   arr(data);
 // });
