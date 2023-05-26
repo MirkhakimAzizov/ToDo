@@ -21,20 +21,26 @@ let elForm = document.querySelector(".el-form");
 elBtn.addEventListener("click", (e)=>{
 e.preventDefault();
   let value1 = elName.value;
-  console.log(value1);
-  console.log(elName);
-  console.log(elPhone);
-  console.log(elProduct);
-  console.log(elForm);
+  let value2 = elPhone.value;
+  let value3 = elProduct.value;
+  console.log(value1, value2, value3);
+  
+  let user = {
+    name: value1,
+    phone: value2,
+    product: value3,
+  };
+  
+  fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8'
+    },
+    body: JSON.stringify(user)
+  });
+  
 });
 
-fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json;charset=utf-8'
-  },
-  body: JSON.stringify(user)
-})
 fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users')
       .then(response => response.json())
       .then(json => console.log(json));
