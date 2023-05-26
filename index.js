@@ -5,6 +5,7 @@ let elName = document.querySelector(".name-input");
 let elPhone = document.querySelector(".phone-input");
 let elProduct = document.querySelector(".product-input");
 let elForm = document.querySelector(".el-form");
+let elList = document.querySelector(".list");
 
 // elForm.addEventListener("submit", (e)=>{
 //   e.preventDefault();
@@ -52,15 +53,13 @@ let data;
 
 fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users')
       .then(response => response.json())
-      .then(json => data = json);
-console.log(data);
-
-let elList = document.querySelector(".list");
-
+      .then(json => {
+data = json;
+  console.log(data);
 elList.innerHTML = `
 
   data.forEach((item)=>{
-   <div class="card" style="width: 100%;">
+   <div class="card" style="width: 100%; margin: 0 25px;">
     <ul class="list-group list-group-flush">
       <li class="list-group-item">${item.name}</li>
       <li class="list-group-item">${item.phone}</li>
@@ -70,3 +69,9 @@ elList.innerHTML = `
   })
 
 `;
+
+});
+
+
+
+
