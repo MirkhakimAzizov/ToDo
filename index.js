@@ -5,10 +5,10 @@ let user = {
   id: 18,
 };
 
-let elBtn = querySelector(".post-btn");
-let elName = querySelector("name-input");
-let elPhone = querySelector("phone-input");
-let elProduct = querySelector("product-input");
+let elBtn = document.querySelector(".post-btn");
+let elName = document.querySelector("name-input");
+let elPhone = document.querySelector("phone-input");
+let elProduct = document.querySelector("product-input");
 
 elBtn.addEventListener((e)=>{
 e.preventDefault;
