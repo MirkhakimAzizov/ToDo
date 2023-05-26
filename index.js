@@ -56,7 +56,7 @@ fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users')
       .then(json => {
 data = json;
   console.log(data);
-  console.log(1);
+  console.log(2);
 
   data.forEach((item)=>{
    let elLi = document.createElement('li');
@@ -69,8 +69,9 @@ data = json;
     </ul>
   </div>
    ` 
+    elList.append(elLi);
   })
-elList.append(elLi);
+
 
 });
 
