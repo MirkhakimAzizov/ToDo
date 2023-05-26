@@ -10,7 +10,7 @@ let elName = document.querySelector("name-input");
 let elPhone = document.querySelector("phone-input");
 let elProduct = document.querySelector("product-input");
 
-elBtn.addEventListener((e)=>{
+elBtn.addEventListener("click", (e)=>{
 e.preventDefault;
   let value1 = elName.value;
   console.log(value1);
