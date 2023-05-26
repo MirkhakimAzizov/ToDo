@@ -48,6 +48,25 @@ if(elName.value == "777" && elPhone.value == "777"){
   
 });
 
+let data;
+
 fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users')
       .then(response => response.json())
-      .then(json => console.log(json));
+      .then(json => data = json);
+console.log(data);
+
+let elList = document.querySelector(".list");
+
+elList.innerHTML = `
+
+  data.forEach((item)=>{
+   <div class="card" style="width: 100%;">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">${item.name}</li>
+      <li class="list-group-item">${item.phone}</li>
+      <li class="list-group-item">${item.product}</li>
+    </ul>
+  </div>
+  })
+
+`;
