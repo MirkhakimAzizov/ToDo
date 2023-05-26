@@ -56,19 +56,21 @@ fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users')
       .then(json => {
 data = json;
   console.log(data);
-elList.innerHTML = `
+  console.log(1);
 
   data.forEach((item)=>{
-   <div class="card" style="width: 100%; margin: 0 25px;">
+   let elLi = document.createElement('li');
+    elLi.innerHTML = `
+    <div class="card" style="width: 100%; margin: 0 25px;">
     <ul class="list-group list-group-flush">
       <li class="list-group-item">${item.name}</li>
       <li class="list-group-item">${item.phone}</li>
       <li class="list-group-item">${item.product}</li>
     </ul>
   </div>
+   ` 
   })
-
-`;
+elList.append(elLi);
 
 });
 
