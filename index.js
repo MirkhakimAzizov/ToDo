@@ -36,6 +36,8 @@ if(elName.value && elPhone.value && elProduct.value){
     body: JSON.stringify(user)
   });
   
+} else {
+  alert("Barcha maydonlarni to'ldirish shart !!!");
 }
   
   elName.value = '';
