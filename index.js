@@ -1,9 +1,4 @@
 "use strict";
-let user = {
-  name: 'John',
-  password: 'Smith',
-  id: 18,
-};
 
 let elBtn = document.querySelector(".post-btn");
 let elName = document.querySelector(".name-input");
@@ -23,9 +18,11 @@ e.preventDefault();
   let value1 = elName.value;
   let value2 = elPhone.value;
   let value3 = elProduct.value;
-  console.log(value1, value2, value3);
+//   console.log(value1, value2, value3);
   
-  let user = {
+if(elName.value && elPhone.value && elProduct.value){
+
+    let user = {
     name: value1,
     phone: value2,
     product: value3,
@@ -38,6 +35,12 @@ e.preventDefault();
     },
     body: JSON.stringify(user)
   });
+  
+}
+  
+  elName.value = '';
+  elPhone.value = '';
+  elProduct.value = '';
   
 });
 
