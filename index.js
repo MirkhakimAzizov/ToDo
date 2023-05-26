@@ -11,7 +11,7 @@ let elPhone = document.querySelector("phone-input");
 let elProduct = document.querySelector("product-input");
 let elForm = document.querySelector("el-form");
 
-elForm.addEventListener("submit",e=>{
+elForm.addEventListener("submit", (e)=>{
   e.preventDefault();
   console.log("submit");
   let value1 = elName.value;
