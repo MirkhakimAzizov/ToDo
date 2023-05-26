@@ -56,12 +56,12 @@ fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users')
       .then(json => {
 data = json;
   console.log(data);
-  console.log(3);
+  console.log(4);
   arr(data);
 });
 
-function arr(data){
-data.forEach((item)=>{
+function arr(database){
+database.forEach((item)=>{
    let elLi = document.createElement('li');
     elLi.innerHTML = `
     <div class="card" style="width: 100%; margin: 0 25px;">
