@@ -51,15 +51,18 @@ if(elName.value == "777" && elPhone.value == "777"){
 
 let data;
 
-fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users')
-      .then(response => response.json())
-      .then(json => {
-data = json;
+async function dataBase(){
+  const response = await fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users');
+  const data = await response.json();
+//       .then(response => response.json())
+//       .then(json => {
+// data = json;
   console.log(data);
-  console.log(4);
+  console.log(5);
   arr(data);
 });
-
+}
+dataBase();
 function arr(database){
 database.forEach((item)=>{
    let elLi = document.createElement('li');
