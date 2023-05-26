@@ -11,18 +11,21 @@ let elPhone = document.querySelector("phone-input");
 let elProduct = document.querySelector("product-input");
 let elForm = document.querySelector("el-form");
 
-elForm.addEventListener("submit", (e)=>{
-  e.preventDefault();
-  console.log("submit");
-  let value1 = elName.value;
-  console.log(value1);
-});
-
-// elBtn.addEventListener("click", (e)=>{
-// e.preventDefault();
+// elForm.addEventListener("submit", (e)=>{
+//   e.preventDefault();
+//   console.log("submit");
 //   let value1 = elName.value;
 //   console.log(value1);
 // });
+
+elBtn.addEventListener("click", (e)=>{
+e.preventDefault();
+//   let value1 = elName.value;
+  console.log(elName);
+  console.log(elPhone);
+  console.log(elProduct);
+  console.log(elForm);
+});
 
 fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users', {
   method: 'POST',
