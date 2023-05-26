@@ -56,9 +56,12 @@ fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users')
       .then(json => {
 data = json;
   console.log(data);
-  console.log(2);
+  console.log(3);
+  arr(data);
+});
 
-  data.forEach((item)=>{
+function arr(data){
+data.forEach((item)=>{
    let elLi = document.createElement('li');
     elLi.innerHTML = `
     <div class="card" style="width: 100%; margin: 0 25px;">
@@ -70,11 +73,8 @@ data = json;
   </div>
    ` 
     elList.append(elLi);
-  })
-
-
-});
-
+  });
+}
 
 
 
