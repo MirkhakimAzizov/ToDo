@@ -60,7 +60,7 @@ async function dataBase(){
   console.log(data);
   console.log(5);
   arr(data);
-});
+// });
 }
 dataBase();
 function arr(database){
