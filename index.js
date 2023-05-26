@@ -11,7 +11,7 @@ let elPhone = document.querySelector("phone-input");
 let elProduct = document.querySelector("product-input");
 
 elBtn.addEventListener("click", (e)=>{
-e.preventDefault;
+e.preventDefault();
   let value1 = elName.value;
   console.log(value1);
 });
