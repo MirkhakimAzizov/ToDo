@@ -5,6 +5,17 @@ let user = {
   id: 18,
 };
 
+let elBtn = querySelector(".post-btn");
+let elName = querySelector("name-input");
+let elPhone = querySelector("phone-input");
+let elProduct = querySelector("product-input");
+
+elBtn.addEventListener((e)=>{
+e.preventDefault;
+  let value1 = elName.value;
+  console.log(value1);
+});
+
 fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users', {
   method: 'POST',
   headers: {
