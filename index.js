@@ -6,10 +6,10 @@ let user = {
 };
 
 let elBtn = document.querySelector(".post-btn");
-let elName = document.querySelector("name-input");
-let elPhone = document.querySelector("phone-input");
-let elProduct = document.querySelector("product-input");
-let elForm = document.querySelector("el-form");
+let elName = document.querySelector(".name-input");
+let elPhone = document.querySelector(".phone-input");
+let elProduct = document.querySelector(".product-input");
+let elForm = document.querySelector(".el-form");
 
 // elForm.addEventListener("submit", (e)=>{
 //   e.preventDefault();
@@ -20,7 +20,8 @@ let elForm = document.querySelector("el-form");
 
 elBtn.addEventListener("click", (e)=>{
 e.preventDefault();
-//   let value1 = elName.value;
+  let value1 = elName.value;
+  console.log(value1);
   console.log(elName);
   console.log(elPhone);
   console.log(elProduct);
