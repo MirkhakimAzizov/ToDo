@@ -6,6 +6,7 @@ async function Data(){
     return data;
 }
 Data();
+console.log(new Data())
 async function renderUi(){
     let arr = await Data();
     arr.forEach(item=>{
