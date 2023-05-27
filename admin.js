@@ -14,10 +14,10 @@ async function renderUi(){
         let elBtn = document.createElement('button');
             elBtn.setAttribute('class', 'btn st my-1');
             if(item.st){
-               elBtn.setAttribute('class', 'btn btn-primary');
+               elBtn.setAttribute('class', 'my-1 btn st btn-primary');
                elBtn.innerHTML = 'Bajarildi';
             } else {
-                elBtn.setAttribute('class', 'btn btn-danger');
+                elBtn.setAttribute('class', 'my-1 st btn btn-danger');
                 elBtn.innerHTML = 'Bajarilmadi';
             }
         elLi.innerHTML = `
