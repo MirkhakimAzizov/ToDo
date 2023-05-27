@@ -11,12 +11,7 @@ async function renderUi(){
     arr.forEach(item=>{
         let elLi = document.createElement('li');
         elLi.setAttribute('class', 'card my-3 py-2 px-4 bg-secondary position-relative');
-        elLi.innerHTML = `
-            <li class="list-group-item text-primary">Name: ${item.name}</li>
-            <li class="list-group-item">Phone: ${item.phone}</li>
-            <li class="list-group-item">Product: ${item.product}</li>
-            <span class="position-absolute" style="top: 5px; right: 5px;">ID: ${item.id}</span>
-            let elBtn = document.createElement('button');
+        let elBtn = document.createElement('button');
             elBtn.setAttribute('class', 'btn my-1');
             if(item.st){
                elBtn.setAttribute('class', 'btn-primary );
@@ -25,7 +20,13 @@ async function renderUi(){
                 elBtn.setAttribute('class', 'btn-primary );
                 elBtn.innerHTML = 'Bajarilmadi';
             }
+        elLi.innerHTML = `
+            <li class="list-group-item text-primary">Name: ${item.name}</li>
+            <li class="list-group-item">Phone: ${item.phone}</li>
+            <li class="list-group-item">Product: ${item.product}</li>
+            <span class="position-absolute" style="top: 5px; right: 5px;">ID: ${item.id}</span>
         `
+        elLi.append(elBtn);
         elList.append(elLi);
     });
         let elLi = document.createElement('li');
