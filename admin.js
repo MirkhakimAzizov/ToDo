@@ -36,7 +36,7 @@ async function renderUi(){
 }
 renderUi();
 elList.addEventListener("click", e=>{
-    if(evt.target.matches(".st")){
+    if(e.target.matches(".st")){
         let id = e.target.dataset.id;
         console.log(id);
     }
