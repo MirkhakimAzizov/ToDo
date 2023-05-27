@@ -17,9 +17,9 @@ let now = new Date();
 let h = now.getHours();
 let m = now.getMinutes();
   let pas = "pas"+h+m;
-console.log(pas);
-  console.log(m);
-  console.log("pas"+h+m);
+// console.log(pas);
+//   console.log(m);
+//   console.log("pas"+h+m);
 elBtn.addEventListener("click", (e)=>{
 e.preventDefault();
   let value1 = elName.value;
