@@ -39,7 +39,7 @@ elList.addEventListener("click", e=>{
     if(e.target.matches(".st")){
         let id = e.target.dataset.id;
         console.log(id);
-        fetch('https://<PROJECT_TOKEN.mockapi.io/tasks/1', {
+        fetch(`https://642682b4d24d7e0de471791d.mockapi.io/mir/users/${id}`, {
             method: 'DELETE',
         }).then(res => {
             if (res.ok) {
