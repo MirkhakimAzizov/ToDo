@@ -12,7 +12,7 @@ async function renderUi(){
         let elLi = document.createElement('li');
         elLi.setAttribute('class', 'card my-3 py-2 px-4 bg-secondary position-relative');
         let elBtn = document.createElement('button');
-            elBtn.setAttribute('class', 'btn st my-1');
+            elBtn.setAttribute('data', `${item.id}`);
             if(item.st){
                elBtn.setAttribute('class', 'my-1 btn st btn-primary');
                elBtn.innerHTML = 'Bajarildi';
