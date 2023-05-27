@@ -12,7 +12,7 @@ async function renderUi(){
         let elLi = document.createElement('li');
         elLi.setAttribute('class', 'card my-3 py-2 px-4 bg-secondary position-relative');
         let elBtn = document.createElement('button');
-            elBtn.setAttribute('data', `id-${item.id}`);
+            elBtn.setAttribute('data-id', `${item.id}`);
             if(item.st){
                elBtn.setAttribute('class', 'my-1 btn st btn-primary');
                elBtn.innerHTML = 'Bajarildi';
@@ -37,7 +37,7 @@ async function renderUi(){
 renderUi();
 elList.addEventListener("click", e=>{
     if(evt.target.matches(".st")){
-        let id = evt.target.dataset.id;
+        let id = e.target.dataset.id;
         console.log(id);
     }
 })
