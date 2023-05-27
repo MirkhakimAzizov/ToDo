@@ -10,6 +10,7 @@ async function renderUi(){
     let arr = await Data();
     arr.forEach(item=>{
         let elLi = document.createElement('li');
+        elLi.setAttribute('class', 'card my-3');
         elLi.innerHTML = `
             <li class="list-group-item">${item.name}</li>
             <li class="list-group-item">${item.phone}</li>
