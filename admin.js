@@ -6,10 +6,7 @@ async function Data(){
     return data;
 }
 Data();
-let now = new Date();
-let h = now.getHours();
-let m = now.getMinutes();
-console.log("pas"+h+m);
+
 async function renderUi(){
     let arr = await Data();
     arr.forEach(item=>{
