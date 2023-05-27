@@ -2,11 +2,13 @@
 async function Data(){
     let res = await fetch('https://jsonplaceholder.typicode.com/posts');
     let data = await res.json();
-    console.log(data, 2);
-    renderUi(data);
+    console.log(data, 3);
+//     renderUi(data);
+    return data;
 }
 Data();
-function renderUi(arr){
+async function renderUi(){
+    let arr = await Data();
     arr.forEach(item=>{
         let elLi = document.createElement('li');
         elLi.innerHTML = `
