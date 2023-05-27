@@ -16,7 +16,15 @@ async function renderUi(){
             <li class="list-group-item">Phone: ${item.phone}</li>
             <li class="list-group-item">Product: ${item.product}</li>
             <span class="position-absolute" style="top: 5px; right: 5px;">ID: ${item.id}</span>
-            <button class="btn my-1" class=`${item.st ? "btn-primary" : "btn-danger"}`>${item.st ? "Bajarildi" : "Bajarilmadi"}</button>
+            let elBtn = document.createElement('button');
+            elBtn.setAttribute('class', 'btn my-1');
+            if(item.st){
+               elBtn.setAttribute('class', 'btn-primary );
+               elBtn.innerHTML = 'Bajarildi';
+            } else {
+                elBtn.setAttribute('class', 'btn-primary );
+                elBtn.innerHTML = 'Bajarilmadi';
+            }
         `
         elList.append(elLi);
     });
