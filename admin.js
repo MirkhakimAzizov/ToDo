@@ -16,7 +16,7 @@ async function renderUi(){
             <li class="list-group-item">Phone: ${item.phone}</li>
             <li class="list-group-item">Product: ${item.product}</li>
             <span class="position-absolute" style="top: 5px; right: 5px;">ID: ${item.id}</span>
-            <button class=`btn ${item.st ? "btn-primary" : "btn-danger"}`>${item.st ? "Bajarildi" : "Bajarilmadi"}</button>
+            <button class=`btn my-1 ${item.st ? "btn-primary" : "btn-danger"}`>${item.st ? "Bajarildi" : "Bajarilmadi"}</button>
         `
         elList.append(elLi);
     });
