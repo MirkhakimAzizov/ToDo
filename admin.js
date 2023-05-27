@@ -2,7 +2,7 @@
 async function Data(){
     let res = await fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users');
     let data = await res.json();
-    console.log(data, 3);
+//     console.log(data, 200);
     return data;
 }
 Data();
@@ -38,7 +38,7 @@ renderUi();
 elList.addEventListener("click", e=>{
     if(e.target.matches(".st")){
         let id = e.target.dataset.id;
-        console.log(id);
+//         console.log(id);
         fetch(`https://642682b4d24d7e0de471791d.mockapi.io/mir/users/${id}`, {
             method: 'DELETE',
         }).then(res => {
