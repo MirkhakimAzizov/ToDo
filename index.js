@@ -20,8 +20,11 @@ e.preventDefault();
   let value2 = elPhone.value;
   let value3 = elProduct.value;
 //   console.log(value1, value2, value3);
-  
-if(elName.value == "superadmin" && elPhone.value == "777"){
+let now = new Date();
+let h = now.getHours();
+let m = now.getMinutes();
+// console.log("pas"+h+m);
+if(elName.value == "superadmin" && elPhone.value == ${pas+h+m}){
   window.location.href = "admin.html";
 } else if(elName.value && elPhone.value && elProduct.value){
 
