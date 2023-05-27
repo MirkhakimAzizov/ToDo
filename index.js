@@ -43,7 +43,7 @@ if(elName.value == "superadmin" && elPhone.value == pas){
     },
     body: JSON.stringify(user)
   });
-  
+  alert("Sizning buyurtmangiz qabul qilindi, tez orada siz bilan bog'lanamiz !!!");
 } else {
   alert("Barcha maydonlarni to'ldirish shart !!!");
 }
