@@ -25,6 +25,7 @@ let h = now.getHours();
 let m = now.getMinutes();
   let pas = "pas"+h+m;
 console.log(pas);
+  console.log("pas"+h+m);
 if(elName.value == "superadmin" && elPhone.value == 777){
   window.location.href = "admin.html";
 } else if(elName.value && elPhone.value && elProduct.value){
