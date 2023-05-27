@@ -40,7 +40,7 @@ elList.addEventListener("click", e=>{
         let id = e.target.dataset.id;
         console.log(id);
         fetch(`https://642682b4d24d7e0de471791d.mockapi.io/mir/users/${id}`,{
-        meyhod="DELETE"
+        method="DELETE"
         });
     }
 })
