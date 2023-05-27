@@ -24,7 +24,7 @@ async function renderUi(){
         elLi.innerHTML = `
             <li class="list-group-item text-primary">Name: ${item.name}</li>
             <li class="list-group-item">Phone: ${item.phone}</li>
-            <li class="list-group-item">Product: ${item.product}</li>
+            <li class="list-group-item">Manzil: ${item.product}</li>
             <span class="position-absolute" style="top: 5px; right: 5px;">ID: ${item.id}</span>
         `
         elLi.append(elBtn);
