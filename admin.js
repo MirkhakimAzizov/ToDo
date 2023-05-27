@@ -15,7 +15,7 @@ async function renderUi(){
             <li class="list-group-item text-primary">Name: ${item.name}</li>
             <li class="list-group-item">Phone: ${item.phone}</li>
             <li class="list-group-item">Product: ${item.product}</li>
-            <span class="position-absolute top-1 right-1">ID: ${item.id}</span>
+            <span class="position-absolute" style="top: 5px; right: 5px;">ID: ${item.id}</span>
         `
         elList.append(elLi);
     });
