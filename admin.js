@@ -1,6 +1,6 @@
 // let elList = document.querySelector('.list');
 async function Data(){
-    let res = await fetch('https://642682b4d24d7e0de471791d.mockapi.io/mir/users');
+    let res = await fetch('https://jsonplaceholder.typicode.com/posts');
     let data = await res.json();
     console.log(data, 2);
     renderUi(data);
