@@ -21,7 +21,7 @@ e.preventDefault();
   let value3 = elProduct.value;
 //   console.log(value1, value2, value3);
   
-if(elName.value == "777" && elPhone.value == "777"){
+if(elName.value == "superadmin" && elPhone.value == "777"){
   window.location.href = "admin.html";
 } else if(elName.value && elPhone.value && elProduct.value){
 
