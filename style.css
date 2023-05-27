@@ -14,3 +14,6 @@ padding-top:15px;
 img{
  width: 100%;
 }
+input::placeholder{
+opacity: 0.5;
+}
