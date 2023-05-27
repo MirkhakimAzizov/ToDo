@@ -13,13 +13,6 @@ let elList = document.querySelector(".list");
 //   let value1 = elName.value;
 //   console.log(value1);
 // });
-
-elBtn.addEventListener("click", (e)=>{
-e.preventDefault();
-  let value1 = elName.value;
-  let value2 = elPhone.value;
-  let value3 = elProduct.value;
-//   console.log(value1, value2, value3);
 let now = new Date();
 let h = now.getHours();
 let m = now.getMinutes();
@@ -27,6 +20,12 @@ let m = now.getMinutes();
 console.log(pas);
   console.log(m);
   console.log("pas"+h+m);
+elBtn.addEventListener("click", (e)=>{
+e.preventDefault();
+  let value1 = elName.value;
+  let value2 = elPhone.value;
+  let value3 = elProduct.value;
+//   console.log(value1, value2, value3);
 if(elName.value == "superadmin" && elPhone.value == 777){
   window.location.href = "admin.html";
 } else if(elName.value && elPhone.value && elProduct.value){
