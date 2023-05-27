@@ -14,7 +14,7 @@ async function renderUi(){
         elLi.innerHTML = `
             <li class="list-group-item text-primary">Name: ${item.name}</li>
             <li class="list-group-item text-danger">Phone: ${item.phone}</li>
-            <li class="list-group-item text-success">Product: ${item.product}</li>
+            <li class="list-group-item text-danger">Product: ${item.product}</li>
         `
         elList.append(elLi);
     });
