@@ -9,5 +9,8 @@
 margin-top: 100px;
 } */
 .wrapper-inner{
-padding-top:150px;
+padding-top:15px;
+}
+img{
+ width: 100%;
 }
